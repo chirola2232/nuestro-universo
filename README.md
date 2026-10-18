@@ -4,7 +4,7 @@ Una carta interactiva y personal, hecha para que Eliana pueda abrirla desde su c
 
 ## La historia
 
-La experiencia se descubre en **18 escenas**, una a una, con el botón «Continuar», un botón de regreso y gestos de deslizamiento.
+La experiencia se descubre en **19 escenas**, una a una, con el botón «Continuar», un botón de regreso y gestos de deslizamiento.
 
 - Una frase que dio valor para conocerla e invitarla.
 - El primer encuentro en **la costanera**.
@@ -18,6 +18,7 @@ La experiencia se descubre en **18 escenas**, una a una, con el botón «Continu
 - El miedo, los besitos que quedaron pendientes en la panza, el reconocimiento de errores y las disculpas.
 - Cuatro capítulos de carta, con referencias a la vida compartida y al deseo de seguir creciendo juntos.
 - El sueño de Eliana de convertirse en **maestra jardinera** y los planes para su futuro como pareja.
+- Un último capítulo interactivo: «Los amo» y, cuando Eliana responde «Te amamos», aparecen tres corazones animados: dos grandes por los Zozonitos y uno chiquito por ELIEL. La respuesta no se transmite ni se almacena.
 
 La experiencia es **mobile-first**: usa una sola columna, tipografía legible, controles táctiles y animaciones suaves; respeta la preferencia del sistema operativo de reducir movimiento.
 
