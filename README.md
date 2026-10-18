@@ -1,43 +1,46 @@
-# Para Eliana ✧ Nuestro universo
+# Nuestro Universo ✧ Para Eliana y ELIEL
 
-Web romántica e interactiva, especialmente diseñada para abrirse en teléfonos con un código QR.
+Una carta interactiva y personal, hecha para que Eliana pueda abrirla desde su celular mediante un enlace o QR.
 
-## Qué incluye
-- 12 pantallas consecutivas con botón **Continuar**, **Atrás**, deslizamiento horizontal y reinicio.
-- Estrellas animadas, nebulosas, meteoros suaves y un corazón de partículas alrededor de la imagen cósmica de Eliana.
-- Una imagen cósmica realizada usando las fotografías de Eliana como referencia; dentro del corazón aparece ELIEL.
-- Seis fotografías reales integradas como pequeños planetas/estrellas en una constelación interactiva.
-- La carta personal repartida en tres pantallas legibles desde celular.
-- Diseño adaptable, compatible con iPhone y Android, respetando la opción de reducir movimiento.
-- Sitio 100% estático, sin contraseñas, bases de datos ni dependencias JavaScript externas. Las fuentes de Google Fonts requieren conexión; hay fuentes alternativas si no cargan.
+## La historia
 
-## Ver antes de publicar
-Abrí `index.html` desde una computadora o teléfono. Para evitar restricciones al abrir archivos locales, podés iniciar un servidor local con Python en la carpeta del proyecto:
+La experiencia se descubre en **18 escenas**, una a una, con el botón «Continuar», un botón de regreso y gestos de deslizamiento.
 
-```bash
-python -m http.server 8000
-```
+- Una frase que dio valor para conocerla e invitarla.
+- El primer encuentro en **la costanera**.
+- Los cafés que comparten en **la Axion**.
+- La primera cita y los planes en el **cine del shopping**.
+- Las caminatas de la tarde para charlar.
+- **Los Zozonitos**, un **mamut** y un **panda**.
+- El **Barrio Chino** y la tarta de ricota que quedó pendiente.
+- La llegada inesperada del embarazo cuando apenas empezaban a salir.
+- El amor por **ELIEL** y el retrato de Eliana dentro de una galaxia en forma de corazón.
+- El miedo, los besitos que quedaron pendientes en la panza, el reconocimiento de errores y las disculpas.
+- Cuatro capítulos de carta, con referencias a la vida compartida y al deseo de seguir creciendo juntos.
+- El sueño de Eliana de convertirse en **maestra jardinera** y los planes para su futuro como pareja.
 
-Después entrá a `http://localhost:8000` desde ese equipo.
+La experiencia es **mobile-first**: usa una sola columna, tipografía legible, controles táctiles y animaciones suaves; respeta la preferencia del sistema operativo de reducir movimiento.
 
-## Publicación actual
-Los archivos de esta experiencia ya están subidos a [chirola2232/nuestro-universo](https://github.com/chirola2232/nuestro-universo), incluida la carpeta `assets/` con las siete imágenes. No hace falta subir archivos manualmente.
+## Desarrollo
 
-Para activar el sitio: abrí [Settings → Pages](https://github.com/chirola2232/nuestro-universo/settings/pages) y en **Build and deployment** elegí **Deploy from a branch**, rama **main**, carpeta **/ (root)** y **Save**.
+HTML, CSS y JavaScript sin compilación, dependencias de runtime ni backend. 
 
-Una vez que GitHub Pages termine de publicar, la URL será:
+- `index.html` — historia, animación, interfaz y carta.
+- `assets/eliana-universo.webp` — retrato cósmico de Eliana y ELIEL.
+- `.github/workflows/pages.yml` — publicación automática en GitHub Pages.
 
-**https://chirola2232.github.io/nuestro-universo/**
+Para probarla localmente, abrí `index.html` en el navegador o iniciá `python -m http.server 8000` en la carpeta del repositorio.
 
-El QR de la carta está diseñado para esa URL. Verificá que la web cargue en tu celular antes de entregar el QR.
+## Publicación
 
-## Privacidad y consentimiento
-GitHub Pages publica estos materiales en Internet. **El nombre, la carta sobre el embarazo y las fotografías pueden quedar accesibles para otras personas**, incluso si el enlace se comparte solamente con Eliana. Asegurate de que ambos estén cómodos con esto antes de publicarlo. Si buscás un acceso privado de verdad, GitHub Pages público no es la opción adecuada.
+Sitio: https://chirola2232.github.io/nuestro-universo/
 
-## Personalización
-- Texto: `index.html` (cada sección `class="scene"`).
-- Imagen de galaxia central: `assets/eliana-universo.webp`.
-- Fotografías: `assets/recuerdo-1.webp` a `recuerdo-6.webp`.
-- Los textos no indican cuántos meses exactos habían pasado; solamente que recién comenzaban la relación.
+Publicación: GitHub Actions con el workflow «Publicar Nuestro Universo». En **Settings → Pages**, seleccioná **GitHub Actions** como fuente si necesitás utilizar el workflow manual. Si elegís **Deploy from a branch**, GitHub Pages también puede crear su propio flujo de publicación. Evitá duplicar despliegues.
 
-Hecho con cariño, para ELIEL, Eliana y una historia que sigue creciendo.
+## Privacidad
+
+**Importante:** GitHub Pages publica el contenido del sitio de forma pública. Cualquier persona con el enlace puede abrirlo, y las imágenes y textos subidos a un repositorio público también son accesibles. Un QR no controla quién puede visitar la página. No hay formularios que recopilen datos.
+
+## Nota de autor
+
+La carta no fija un número exacto de meses ni fechas que no se recuerdan; narra que el embarazo llegó cuando recién empezaban a salir. El mensaje reconoce errores sin exigir perdón y conserva un lugar especial para ELIEL, sin dejar de mirar el futuro de la pareja.
