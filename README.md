@@ -20,13 +20,16 @@ python -m http.server 8000
 
 Después entrá a `http://localhost:8000` desde ese equipo.
 
-## Publicar en GitHub Pages
-1. Entrá a https://github.com/new y creá un repositorio llamado `nuestro-universo`.
-2. Entrá en él, elegí **Add file → Upload files** y subí el contenido del ZIP: `index.html`, `README.md` y **toda la carpeta `assets`**. No subas la carpeta contenedora `eliel-experiencia`: `index.html` debe quedar en la raíz.
-3. Confirmá los cambios (**Commit changes**).
-4. En **Settings → Pages**, sección **Build and deployment**, elegí `Deploy from a branch`, rama `main` y carpeta `/ (root)`, y guardá.
-5. La dirección será similar a `https://TU-USUARIO.github.io/nuestro-universo/`. Puede demorar unos minutos en funcionar.
-6. Abrila desde tu teléfono. Con la URL exacta se puede crear un QR imprimible para entregar de sorpresa.
+## Publicación actual
+Los archivos de esta experiencia ya están subidos a [chirola2232/nuestro-universo](https://github.com/chirola2232/nuestro-universo), incluida la carpeta `assets/` con las siete imágenes. No hace falta subir archivos manualmente.
+
+Para activar el sitio: abrí [Settings → Pages](https://github.com/chirola2232/nuestro-universo/settings/pages) y en **Build and deployment** elegí **Deploy from a branch**, rama **main**, carpeta **/ (root)** y **Save**.
+
+Una vez que GitHub Pages termine de publicar, la URL será:
+
+**https://chirola2232.github.io/nuestro-universo/**
+
+El QR de la carta está diseñado para esa URL. Verificá que la web cargue en tu celular antes de entregar el QR.
 
 ## Privacidad y consentimiento
 GitHub Pages publica estos materiales en Internet. **El nombre, la carta sobre el embarazo y las fotografías pueden quedar accesibles para otras personas**, incluso si el enlace se comparte solamente con Eliana. Asegurate de que ambos estén cómodos con esto antes de publicarlo. Si buscás un acceso privado de verdad, GitHub Pages público no es la opción adecuada.
