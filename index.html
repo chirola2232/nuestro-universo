@@ -17,7 +17,7 @@
 #sky{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.nebula{position:fixed;inset:-20%;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 48% 40%,#642c6833,transparent 44%),radial-gradient(ellipse at 16% 85%,#34478422,transparent 40%),radial-gradient(ellipse at 85% 12%,#ad477724,transparent 32%);filter:blur(16px);animation:nebulamove 20s ease-in-out infinite alternate}@keyframes nebulamove{to{transform:translate(-2%,3%) scale(1.08)}}
 .app{isolation:isolate;position:relative;z-index:1;height:100%;height:100dvh;display:flex;flex-direction:column;max-width:760px;margin:auto}.app:before,.app:after{content:"";pointer-events:none;position:absolute;inset:0 auto 0 0;width:1px;background:linear-gradient(transparent,#ffd1e51a,transparent)}.app:after{left:auto;right:0}
 .topbar{position:relative;z-index:5;flex:none;padding:calc(17px + env(safe-area-inset-top)) 23px 10px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:600;color:#ffe0ed;font-size:10px;letter-spacing:.31em;text-transform:uppercase}.brand b{color:var(--gold);font-weight:500}.topright{display:flex;align-items:center;gap:8px}.pagecount{font-size:11px;letter-spacing:.09em;color:#c6b7d1;font-variant-numeric:tabular-nums}.mini-button{width:33px;height:33px;display:grid;place-items:center;border:1px solid #ffcbde2b;background:#ffffff09;color:#fff0f6;border-radius:100%;cursor:pointer}.mini-button svg{width:15px;height:15px}
-.progress{height:2px;margin:0 23px;flex:none;background:#e0bdd01c;border-radius:2px;overflow:hidden}.progress>span{display:block;width:5.556%;height:100%;background:linear-gradient(90deg,#e5a5d4,#ffe6c7);box-shadow:0 0 12px #edb5ea;transition:width .65s cubic-bezier(.18,.75,.22,1)}
+.progress{height:2px;margin:0 23px;flex:none;background:#e0bdd01c;border-radius:2px;overflow:hidden}.progress>span{display:block;width:5.263%;height:100%;background:linear-gradient(90deg,#e5a5d4,#ffe6c7);box-shadow:0 0 12px #edb5ea;transition:width .65s cubic-bezier(.18,.75,.22,1)}
 .stage{position:relative;flex:1;min-height:0}.scene{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px 25px 12px;opacity:0;transform:translateY(18px) scale(.985);filter:blur(5px);pointer-events:none;visibility:hidden;transition:opacity .65s ease,transform .65s ease,filter .6s,visibility .65s}.scene.active{opacity:1;transform:none;filter:none;pointer-events:auto;visibility:visible;z-index:2}.scene-scroll{width:100%;max-width:600px;max-height:100%;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#9d77988c transparent;overscroll-behavior:contain;padding:12px 3px 20px;text-align:center}.scene-scroll::-webkit-scrollbar{width:4px}.scene-scroll::-webkit-scrollbar-thumb{background:#9d77988c;border-radius:10px}
 .kicker{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.30em;text-transform:uppercase;line-height:1.8;margin:0 0 17px}.script{font-family:'Great Vibes','Playfair Display',Georgia,serif;font-size:clamp(42px,11vw,71px);line-height:1.1;color:#ffe1ef;text-shadow:0 1px 25px #fe8ac04b;font-weight:400;margin:0}.scene-title{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(30px,7.7vw,49px);line-height:1.18;letter-spacing:-.025em;margin:0 auto 21px;max-width:610px}.scene-title em{color:#ffcbe5;font-weight:400}.lead{font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,4.7vw,24px);line-height:1.66;max-width:540px;margin:14px auto;color:#faf0f3}.copy{font-size:clamp(14px,3.9vw,17px);line-height:1.9;color:#e5d8e7;max-width:515px;margin:16px auto}.copy strong{font-weight:600;color:#ffdaed}.divider-icon{display:block;margin:23px auto;color:#efc7a9;font-size:24px;text-shadow:0 0 25px #f5a7c8}.fine{font-size:12px;line-height:1.8;color:#c6b8ce;margin:17px auto;max-width:360px}.pink{color:#ffe0ee}.gold{color:#f9dfb7}
 .hero-emblem{width:min(58vw,250px);aspect-ratio:1;position:relative;margin:10px auto 25px;display:grid;place-items:center}.hero-emblem .ring{position:absolute;inset:9%;border-radius:50%;border:1px solid #fcadd16a;box-shadow:0 0 30px #e78aba3b, inset 0 0 24px #dc86b822;animation:orbreathe 4s ease-in-out infinite}.hero-emblem .ring:nth-child(2){inset:0;transform:rotate(-24deg) scaleX(.83);border-color:#f8dcac66;animation-duration:6s}.hero-emblem .ring:nth-child(3){inset:17%;transform:rotate(33deg) scaleX(.82);border-color:#f49ed257;animation-duration:5s}.hero-emblem span{font-family:'Playfair Display',Georgia,serif;font-size:clamp(46px,13vw,89px);color:#fff3f3;text-shadow:0 0 60px #fcb7d5,0 0 18px #f6abd4;font-weight:400}@keyframes orbreathe{50%{opacity:.55;filter:drop-shadow(0 0 20px #e59fcb)}}
@@ -58,13 +58,53 @@
 @media(max-height:760px){.ritual-orb{height:108px;width:130px;margin:4px auto 10px}.ritual-glyph{font-size:54px}.ritual-orb small{font-size:10px}.zozo-animal{min-height:105px;width:107px}.zozo-animal span{font-size:52px}.zozo-pair{margin-bottom:7px}.quote-open{padding:10px;font-size:18px}.closing-whisper{margin:9px auto 4px}}
 @media(prefers-reduced-motion:reduce){.zozo-animal,.ritual-orb{animation:none!important}}
 
+
+/* Último capítulo interactivo */
+.love-end{padding-bottom:35px}
+.love-stars{font-size:32px;letter-spacing:.3em;color:#ffe0d0;text-shadow:0 0 23px #ff9ccf;animation:twinkle 4s infinite;margin:0 auto 11px}
+.love-prelude{font-family:'Playfair Display',Georgia,serif;font-size:clamp(17px,4.2vw,21px);color:#e9d1e4;margin:2px auto 5px}
+.love-declaration{font-family:'Great Vibes','Playfair Display',Georgia,serif;font-size:clamp(75px,20vw,122px);font-weight:400;line-height:1.2;color:#ffe3f0;text-shadow:0 0 22px #ff86bf,0 0 70px #ec73bb80;margin:0 0 6px;animation:love-glow 4s alternate infinite}
+.love-text{font-size:clamp(14px,3.7vw,18px);line-height:1.8;color:#f2e1ee;margin:5px auto 23px;max-width:445px}
+.love-form{max-width:420px;margin:14px auto 10px;padding:20px 16px 15px;border-radius:22px;background:linear-gradient(130deg,#542c586c,#322343a8);border:1px solid #ffd1e281;box-shadow:0 15px 60px #e986be25}
+.love-form[hidden],.love-reveal[hidden]{display:none!important}
+.love-form label{display:block;color:#fff1f8;font-size:clamp(14px,4vw,17px);font-weight:600;line-height:1.55;margin:0 0 15px}
+.love-form input{font:500 16px 'DM Sans',system-ui,sans-serif;width:100%;height:53px;text-align:center;border-radius:15px;background:#111020e6;color:#fff9fa;border:1px solid #f5c3e5b8;padding:10px 13px;outline:none}
+.love-form input::placeholder{color:#c5adbf}
+.love-form input:focus-visible{outline:2px solid #ffe6c7;outline-offset:2px}
+.love-form button{font:700 14px 'DM Sans',system-ui,sans-serif;width:100%;min-height:53px;margin-top:11px;border-radius:15px;border:1px solid #ffe3f0aa;background:linear-gradient(120deg,#ba629c,#7752a8);color:#fff;cursor:pointer}
+.love-form button:focus-visible{outline:2px solid #ffe6c7;outline-offset:2px}
+.love-form button span{font-size:20px;margin-left:5px}
+.love-form p{font-size:12px;color:#e6cbdc;line-height:1.6;margin:13px auto 0}
+.love-reveal{max-width:490px;margin:auto}
+.love-answer{font-family:'Great Vibes','Playfair Display',Georgia,serif;font-size:clamp(59px,15vw,95px);color:#ffe4f4;margin:0 auto;text-shadow:0 0 28px #ec81bd;animation:love-appear 1.2s ease both}
+.love-three{display:flex;align-items:flex-start;justify-content:center;gap:clamp(3px,2vw,18px);position:relative;max-width:430px;margin:8px auto 12px;padding:10px 0}
+.love-three:before{content:"";z-index:-1;position:absolute;inset:6%;background:radial-gradient(ellipse at center,#f581b754,transparent 73%);filter:blur(25px)}
+.love-heart{display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0;opacity:0;animation:love-pop 1.3s cubic-bezier(.2,1.2,.34,1) forwards;animation-delay:calc(var(--order) * .43s)}
+.love-heart svg{height:auto;filter:drop-shadow(0 0 14px #ffa5d9) drop-shadow(0 0 25px #d472b6);animation:love-beat 3.4s infinite;animation-delay:calc(1.3s + var(--order) * .43s)}
+.love-big svg{width:clamp(76px,27vw,126px)}
+.love-small{padding-top:41px;z-index:1}
+.love-small svg{width:clamp(48px,16vw,75px);filter:drop-shadow(0 0 13px #ffe0a5) drop-shadow(0 0 24px #ffde98)}
+.love-heart span{color:#ffe6ee;font-size:clamp(10px,2.7vw,13px);font-weight:600;white-space:nowrap}
+.love-small span{color:#ffe8ba;letter-spacing:.1em}
+.love-glimmer{color:#ffdfb4;font-size:20px;margin:0 auto;animation:twinkle 3s infinite}
+.love-poem{font-family:'Playfair Display',Georgia,serif;font-size:clamp(16px,4.4vw,22px);color:#ffe4ef;line-height:1.75;margin:11px auto;animation:love-appear 1.4s .8s both}
+.love-forever{font-size:clamp(13px,3.4vw,16px);color:#eed4e4;line-height:1.7;margin:12px auto;animation:love-appear 1.4s 1.1s both}
+.love-signature{font-family:'Great Vibes','Playfair Display',Georgia,serif;color:#ffe1f1;font-size:clamp(37px,10vw,62px);line-height:1.2;margin:16px auto;animation:love-appear 1.4s 1.4s both}
+.love-bottom{font-family:'Playfair Display',Georgia,serif;color:#cbb5d3;font-size:13px;font-style:italic;margin:15px auto 8px}
+@keyframes love-glow{to{text-shadow:0 0 36px #ffa3da,0 0 95px #e879bf}}
+@keyframes love-pop{0%{opacity:0;transform:translateY(36px) scale(.3)}65%{opacity:1;transform:translateY(-6px) scale(1.09)}100%{opacity:1;transform:none}}
+@keyframes love-beat{0%,100%{transform:scale(1)}15%{transform:scale(1.08)}29%{transform:scale(1)}43%{transform:scale(1.04)}57%{transform:scale(1)}}
+@keyframes love-appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(max-height:720px){.love-stars{margin-bottom:3px}.love-declaration{font-size:clamp(66px,18vw,95px)}.love-text{margin-bottom:8px}.love-form{margin:8px auto;padding:13px 14px}.love-form label{margin-bottom:8px}}
+@media(max-width:360px){.love-big svg{width:77px}.love-small svg{width:49px}.love-small{padding-top:27px}.love-heart span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.love-heart{opacity:1;transform:none;animation:none!important}.love-answer,.love-poem,.love-forever,.love-signature{opacity:1;transform:none;animation:none!important}}
 </style>
 </head>
 <body>
 <canvas id="sky" aria-hidden="true"></canvas><div class="nebula" aria-hidden="true"></div>
 <div class="app">
-<header class="topbar"><div class="brand">Nuestro universo <b>✧</b></div><div class="topright"><span class="pagecount" id="pagecount" aria-live="polite">01 / 18</span><button id="restartTop" class="mini-button" type="button" title="Volver al comienzo" aria-label="Volver al comienzo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button></div></header>
-<div class="progress" role="progressbar" aria-label="Progreso de la historia" aria-valuemin="1" aria-valuemax="18" aria-valuenow="1" id="progress"><span id="progressfill"></span></div>
+<header class="topbar"><div class="brand">Nuestro universo <b>✧</b></div><div class="topright"><span class="pagecount" id="pagecount" aria-live="polite">01 / 19</span><button id="restartTop" class="mini-button" type="button" title="Volver al comienzo" aria-label="Volver al comienzo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button></div></header>
+<div class="progress" role="progressbar" aria-label="Progreso de la historia" aria-valuemin="1" aria-valuemax="19" aria-valuenow="1" id="progress"><span id="progressfill"></span></div>
 <main class="stage" id="stage" aria-live="off">
 <section class="scene active" data-label="Para mi Zozonita" data-next="Descubrir cómo empezó" aria-label="Para mi Zozonita"><div class="scene-scroll"><p class="kicker">Hay historias escritas en las estrellas</p><h1 class="script">Mi Zozonita...</h1><div class="hero-emblem" aria-hidden="true"><div class="ring"></div><div class="ring"></div><div class="ring"></div><span>♡</span></div><p class="lead">Si pudiera regalarte un lugar donde guardar cada instante nuestro, sería <em>un universo entero.</em></p><p class="copy">Esta es nuestra historia, Eliana. La que empezó sin que supiéramos cuánto iba a cambiarnos… y la que seguimos escribiendo, juntitos.</p><p class="fine">Tocá «Continuar» para abrir cada recuerdo, mi amor ✧</p></div></section>
 <section class="scene" data-label="La puerta" data-next="Y entonces te conocí" aria-label="La puerta"><div class="scene-scroll"><p class="kicker">Capítulo I · El valor de animarse</p><div class="ritual-orb" aria-hidden="true"><div class="ritual-satellite">✧</div><span class="ritual-glyph">✦</span><small>El primer paso</small></div><h2 class="scene-title">A veces, una decisión <em>te cambia la vida.</em></h2><p class="lead quote-open">«A veces nos tenemos que obligar a hacer cosas que no queremos, porque eso nos abre muchísimas puertas».</p><p class="copy">Esa frase me dio el empujoncito que me faltaba para animarme a conocerte y a invitarte. No sabía qué iba a pasar. Solo supe que tenía que dejar de pensar tanto y dar ese paso.</p><p class="copy">Y mirá qué puerta me abrió: <strong>la que me llevó hasta vos.</strong></p><p class="closing-whisper">Si pudiera volver, me animaría a buscarte otra vez.</p></div></section>
@@ -83,18 +123,67 @@
 <section class="scene" data-label="Carta III" data-next="Todavía tengo tanto para decirte" aria-label="Carta III"><div class="scene-scroll"><article class="letter-paper"><div class="letter-overline">De mi corazón al tuyo · III</div><h2>Perdón por no haber sabido más.</h2><p>Hay una imagen que me quedó en el corazón: tu pancita y todos los besitos que no me animé a darle. Al principio me frenó el miedo. Hoy daría mucho por volver un instante y demostrar de una manera más clara el cariño que estaba sintiendo por nuestro bebé.</p><p>También hay cosas por las que quiero pedirte perdón. Tuve actitudes inmaduras; a veces respondí desde el susto, la confusión o el egoísmo. <strong>No estuvo bien y no quiero disfrazarlo de otra cosa.</strong> Me duele haber fallado en momentos que necesitaban más ternura y más presencia de mi parte.</p><p>No espero que esta carta borre nada. No quiero hacerte cargar con mi culpa. Solo quiero que sepas que reconozco mis errores, que te escucho y que de verdad deseo demostrarte, cada día, que puedo acompañarte mejor.</p><p>Las circunstancias de nuestra vida no nos permitieron seguir adelante con aquel sueño. No voy a fingir que fue fácil. Pero lo que sentí por ELIEL fue real. <strong>Los amé a los dos entonces, y voy a seguir amándolos siempre.</strong></p></article></div></section>
 <section class="scene" data-label="Carta IV" data-next="Soñemos lo que viene" aria-label="Carta IV"><div class="scene-scroll"><article class="letter-paper"><div class="letter-overline">De mi corazón al tuyo · IV</div><h2>La vida que quiero con vos.</h2><p>Lo que más deseo ahora es seguir siendo tu Zozonito. Volver mil veces a la Axion, ir a ver películas al shopping, salir a caminar por la tarde y contarnos cosas hasta que se nos haga de noche. Tener nuestras pavadas, tus mamuts y mis pandas, nuestros abrazos y nuestras ganas de elegirnos.</p><p>Quiero verte cumplir tu sueño de ser <strong>maestra jardinera</strong>. Me ilusiona imaginarte haciendo lo que te gusta, enseñando con paciencia y cariño, mientras yo estoy ahí para alentarte cuando estés cansada y festejar cada logro tuyo.</p><p>Y me emociona que algo haya cambiado en los dos: antes no queríamos tener hijos, y ahora podemos imaginar ese futuro. <strong>Si algún día llega, quiero formar una familia con vos.</strong> Sin apurarnos, sin prometer una vida perfecta, construyendo con amor lo que antes nos parecía imposible.</p><p>ELIEL siempre va a tener su lugar. No como una obligación de vivir tristes ni como alguien a quien reemplazar, sino como parte de nuestra historia: ese amor que nos enseñó algo inmenso sobre nosotros mismos.</p></article></div></section>
 <section class="scene" data-label="Nuestro mañana" data-next="Una última promesa" aria-label="Nuestro mañana"><div class="scene-scroll"><p class="kicker">Capítulo XII · Lo que todavía nos espera</p><div class="ritual-orb" aria-hidden="true"><div class="ritual-satellite">✧</div><span class="ritual-glyph">⌂</span><small>Nuestro hogar, algún día</small></div><h2 class="scene-title">Una vida de tardes, cafés <em>y sueños compartidos.</em></h2><p class="copy">Quiero estar cuando logres recibirte de maestra jardinera. Quiero tomar tu mano cuando tengas miedo, escucharte en nuestras caminatas y seguir haciéndote reír con alguna tontería de tu panda.</p><p class="copy">Quiero que, cuando pensemos en el futuro, podamos imaginar una familia si la vida nos vuelve a dar esa oportunidad. Sin borrar a ELIEL, porque fue parte de nuestro amor y siempre tendrá un lugar único.</p><p class="lead pink">No quiero saltarme los días. Quiero vivirlos con vos, uno por uno.</p><p class="closing-whisper">Que nuestro amor se note en las cosas que hacemos, no solo en lo que decimos.</p></div></section>
-<section class="scene" data-label="Para siempre" data-next="Volver a nuestro comienzo" aria-label="Para siempre"><div class="scene-scroll"><p class="kicker">Y esta historia no termina acá</p><div class="finish-ring" aria-hidden="true"><span>♡</span></div><p class="script">Mi Zozonita...</p><h2 class="finish-text">Si la vida me llevara otra vez a aquella costanera, <em class="pink">volvería a elegirte.</em></h2><p class="finish-note">Para todos nuestros cafés en la Axion, nuestras películas en el shopping, las caminatas sin apuro y el día en que comamos juntos esa tarta de ricota.</p><p class="finish-note">Para tu mamut y mi panda. Para tus sueños, los míos y los que se volvieron nuestros. Para seguir creciendo y aprendiendo a amarte mejor.</p><p class="lead gold">Por vos, por mí y por ELIEL.<br><strong>Por siempre, mis dos amores.</strong></p><p class="fine">Con todo mi amor, tu Zozonito ♡</p></div></section>
-</main>
+<section class="scene" data-label="Para siempre" data-next="Una última cosita, mi Zozonita" aria-label="Para siempre"><div class="scene-scroll"><p class="kicker">Y esta historia no termina acá</p><div class="finish-ring" aria-hidden="true"><span>♡</span></div><p class="script">Mi Zozonita...</p><h2 class="finish-text">Si la vida me llevara otra vez a aquella costanera, <em class="pink">volvería a elegirte.</em></h2><p class="finish-note">Para todos nuestros cafés en la Axion, nuestras películas en el shopping, las caminatas sin apuro y el día en que comamos juntos esa tarta de ricota.</p><p class="finish-note">Para tu mamut y mi panda. Para tus sueños, los míos y los que se volvieron nuestros. Para seguir creciendo y aprendiendo a amarte mejor.</p><p class="lead gold">Por vos, por mí y por ELIEL.<br><strong>Por siempre, mis dos amores.</strong></p><p class="fine">Con todo mi amor, tu Zozonito ♡</p></div></section>
+
+<section class="scene" data-label="Los amo" data-next="Volver a nuestro comienzo" aria-label="Un último secreto para mi Zozonita">
+ <div class="scene-scroll love-end">
+  <p class="kicker">Un último secreto · Para mi Zozonita</p>
+  <div class="love-stars" aria-hidden="true">✧ ♡ ✧</div>
+  <p class="love-prelude">Hay dos palabras que siempre te digo…</p>
+  <h2 class="love-declaration">Los amo.</h2>
+  <p class="love-text">A vos, mi Zozonita, y a nuestro pequeño ELIEL.<br>Hoy, mañana y en cada estrella de nuestro universo.</p>
+  <form id="loveReplyForm" class="love-form" autocomplete="off">
+    <label for="loveReplyInput">¿Te acordás qué me respondés siempre, mi amor?</label>
+    <input id="loveReplyInput" name="respuesta" type="text" maxlength="80" enterkeyhint="done" spellcheck="false" autocomplete="off" placeholder="Escribí tu respuesta acá…" aria-describedby="loveReplyHint">
+    <button type="submit">Responder <span aria-hidden="true">♡</span></button>
+    <p id="loveReplyHint" aria-live="polite">Unas palabras muy nuestras, guardadas en mi corazón.</p>
+  </form>
+  <div class="love-reveal" id="loveReplyReveal" hidden role="status" aria-live="polite">
+    <p class="love-answer">Te amamos ♡</p>
+    <div class="love-three" aria-label="Tres corazones: dos grandes de Zozonita y Zozonito, y uno chiquito por ELIEL">
+     <div class="love-heart love-big" style="--order:0"><svg viewBox="0 0 100 94" aria-hidden="true"><path d="M50 88C38 76 5 55 5 31 5 15 16 5 30 5c9 0 16 5 20 13C54 10 61 5 70 5c14 0 25 10 25 26 0 24-33 45-45 57Z" fill="#ff9aca"/></svg><span>Mi Zozonita</span></div>
+     <div class="love-heart love-small" style="--order:2"><svg viewBox="0 0 100 94" aria-hidden="true"><path d="M50 88C38 76 5 55 5 31 5 15 16 5 30 5c9 0 16 5 20 13C54 10 61 5 70 5c14 0 25 10 25 26 0 24-33 45-45 57Z" fill="#ffe0ad"/></svg><span>ELIEL</span></div>
+     <div class="love-heart love-big" style="--order:1"><svg viewBox="0 0 100 94" aria-hidden="true"><path d="M50 88C38 76 5 55 5 31 5 15 16 5 30 5c9 0 16 5 20 13C54 10 61 5 70 5c14 0 25 10 25 26 0 24-33 45-45 57Z" fill="#cf9aff"/></svg><span>Tu Zozonito</span></div>
+    </div>
+    <div class="love-glimmer" aria-hidden="true">✦ &nbsp; ✧ &nbsp; ✦ &nbsp; ✧ &nbsp; ✦</div>
+    <p class="love-poem">Dos corazones que se eligieron.<br>Uno chiquito que siempre será parte de los nuestros.</p>
+    <p class="love-forever">Siempre nosotros tres, en algún rincón del universo.</p>
+    <p class="love-signature">Te amo, mi Zozonita ♡</p>
+  </div>
+  <p class="love-bottom">Con todo el amor de tu Zozonito ✧</p>
+ </div>
+</section></main>
 <nav class="controls" aria-label="Navegar por nuestra historia"><button class="back" id="back" disabled aria-label="Volver al capítulo anterior" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button><button class="next" id="next" type="button"><span id="nextText">Empezar nuestra historia</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button><div class="bottomspace" aria-hidden="true"></div></nav>
 </div>
 <script>
 (()=>{'use strict';
 const scenes=[...document.querySelectorAll('.scene')],stage=document.getElementById('stage'),next=document.getElementById('next'),back=document.getElementById('back'),nextText=document.getElementById('nextText'),page=document.getElementById('pagecount'),fill=document.getElementById('progressfill'),progress=document.getElementById('progress');
 let current=0;
+const loveForm=document.getElementById('loveReplyForm');
+const loveInput=document.getElementById('loveReplyInput');
+const loveHint=document.getElementById('loveReplyHint');
+const loveReveal=document.getElementById('loveReplyReveal');
+function resetLoveReply(){
+  loveForm.hidden=false;loveReveal.hidden=true;loveInput.value='';
+  loveHint.textContent='Unas palabras muy nuestras, guardadas en mi corazón.';
+}
+loveForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  const value=loveInput.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .toLowerCase().replace(/[^a-z\s]/g,' ').replace(/\s+/g,' ').trim();
+  if(value!=='te amamos'){
+    loveHint.textContent='Son las dos palabras que me decís cuando te digo «Los amo» ♡';
+    loveInput.focus();return;
+  }
+  loveForm.hidden=true;loveReveal.hidden=false;
+  const scroller=loveReveal.closest('.scene-scroll');
+  if(scroller)scroller.scrollTo({top:scroller.scrollHeight,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+});
+
 function goTo(n){const target=Math.max(0,Math.min(scenes.length-1,n));if(target===current&&n!==0)return;const old=scenes[current];old.classList.remove('active');old.setAttribute('aria-hidden','true');old.inert=true;current=target;const active=scenes[current];active.classList.add('active');active.removeAttribute('aria-hidden');active.inert=false;const scroll=active.querySelector('.scene-scroll');if(scroll)scroll.scrollTop=0;page.textContent=String(current+1).padStart(2,'0')+' / '+String(scenes.length).padStart(2,'0');fill.style.width=((current+1)/scenes.length*100)+'%';progress.setAttribute('aria-valuemax',String(scenes.length));progress.setAttribute('aria-valuenow',String(current+1));back.disabled=current===0;nextText.textContent=active.dataset.next||'Continuar nuestra historia';next.querySelector('svg').style.transform=current===scenes.length-1?'rotate(180deg)':'';stage.setAttribute('aria-label','Capítulo '+(current+1)+' de '+scenes.length+': '+active.dataset.label);if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)document.getElementById('sky').dataset.motion='reduced';}
 scenes.forEach((el,i)=>{if(i!==0){el.setAttribute('aria-hidden','true');el.inert=true}});
-next.addEventListener('click',()=>goTo(current===scenes.length-1?0:current+1));back.addEventListener('click',()=>goTo(current-1));document.getElementById('restartTop').addEventListener('click',()=>{goTo(0)});
-window.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();goTo(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();goTo(current-1)}});
+next.addEventListener('click',()=>{if(current===scenes.length-1){resetLoveReply();goTo(0)}else goTo(current+1)});back.addEventListener('click',()=>goTo(current-1));document.getElementById('restartTop').addEventListener('click',()=>{resetLoveReply();goTo(0)});
+window.addEventListener('keydown',e=>{if(e.target && e.target.closest('input, textarea, select, [contenteditable=true]'))return;if(e.key==='ArrowRight'){e.preventDefault();goTo(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();goTo(current-1)}});
 let touchStart=null;stage.addEventListener('touchstart',e=>{const t=e.touches[0];touchStart={x:t.clientX,y:t.clientY}},{passive:true});stage.addEventListener('touchend',e=>{if(!touchStart)return;const t=e.changedTouches[0],dx=t.clientX-touchStart.x,dy=t.clientY-touchStart.y;touchStart=null;if(Math.abs(dx)>85&&Math.abs(dx)>Math.abs(dy)*1.6){goTo(current+(dx<0?1:-1))}},{passive:true});
 // Animated starfield: depth, breathing particles, and subtle comet trails.
 const canvas=document.getElementById('sky'),ctx=canvas.getContext('2d',{alpha:false});if(!ctx)return;const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;let W=0,H=0,DPR=1,stars=[],heart=[],start=performance.now(),lastComet=0,comet=null;
